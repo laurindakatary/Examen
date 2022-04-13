@@ -6,5 +6,5 @@ def somme(a, b):
     {'Result': 6}
     """
 
-    y = int(2) + int(4)
+    y = int(a) + int(b)
     return {"Result": y}
