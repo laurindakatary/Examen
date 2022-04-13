@@ -73,16 +73,3 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
 
 
-  post_test:
-     # The type of runner that the job will run on
-    needs: deploy
-    runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-      # Runs a set of command using the runners shell
-      - name: Test instance is up
-        run: |
-          pip install requests
-          python -c "import requests; exit(1) if requests.get('https://exam-blanc.herokuapp.com').status_code != 200 else exit(0)"
-
