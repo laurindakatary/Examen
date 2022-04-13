@@ -4,7 +4,6 @@ import sys
 
 
 @route("/addition/<a>/<b>")
-@route("/addition/<a>/<b>/")
 def addition(a, b):
     return somme(a, b)
 
