@@ -3,7 +3,7 @@ from helpers import somme
 import sys
 
 
-@route("/addition")
+@route("/add/<a>/<b>")
 def addition(a, b):
     return somme(a, b)
 
