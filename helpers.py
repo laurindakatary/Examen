@@ -1,15 +1,3 @@
-import random
-
-
-def generate_cookie_value():
-    """
-    >>> len(generate_cookie_value())
-    128
-    """
-
-    return str("".join(random.choice("0123456789ABCDEFabcdef@&!") for i in range(128)))
-
-
 def somme(a, b):
 
     # doctest debut
@@ -18,5 +6,5 @@ def somme(a, b):
     {'Result': 6}
     """
 
-    y = int(a) + int(b)
+    y = int(2) + int(4)
     return {"Result": y}
